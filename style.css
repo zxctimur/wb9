@@ -1,0 +1,16 @@
+.links > li > a:link { 
+    color: green;
+}
+.links > li > a:active {
+    color: blue;
+}
+.links > li > a:visited {
+    color: blueviolet;
+}
+p:hover {
+    color: greenyellow;
+    font-size: 300px;
+}
+img:hover {
+    width: 400px;
+}
