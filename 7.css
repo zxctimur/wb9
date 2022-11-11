@@ -14,7 +14,7 @@ nav {
     height: 500px;
 }
 .friends {
- height: 50%;
+ height: 55%;
  border: 5px solid rgb(196, 23, 23);
  margin: 40px 0px 0px 0px;
 }
@@ -29,5 +29,32 @@ nav {
 }
 .inf {
     width: 70%;
-    
+}
+#inf {
+    border: 5px solid black;
+}
+.inf {
+    margin: 0px 0px 0px 40px;
+}
+.inf1 {
+    border: 5px solid black;
+    margin: 20px 0px 0px 0px;
+}
+.ja {
+    width: 22%;
+    margin: 5px 5px 5px 5px;
+}
+.ji {
+    border-radius: 50% ;
+    width: 135px;
+}
+.cartinki {
+    margin: 5px;
+    font-size: large;
+}
+.line1 {
+display: flex;
+}
+.line2 {
+    display: flex;
 }
