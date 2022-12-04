@@ -2,6 +2,18 @@
     color: rgb(0, 0, 0);
     background-color: black;
 }
+.header {
+    color: black;
+    background-color: rgb(235, 197, 74);
+}
+header {
+    position: sticky;
+    top: 0;
+}
+.back {
+    color: black;
+    background-color: rgb(235, 197, 74);;
+}
 .content {
     display:flex ;
     margin: 10px;
@@ -12,6 +24,7 @@
     background-color: rgb(228, 205, 165);
     border: 1px solid black;
     display: flex;
+    padding: 5px;
     
 }
 .aside {
@@ -29,39 +42,7 @@
 .wrapper {
     background-color: rgb(0, 0, 0);
 }
-.photoe {
-    margin: 5px;
-    width: 35%;
-    background-color: rgb(228, 205, 165);
-}
-.photoe_photoe {
-    width: 100%;
-    border-radius: 5px;
-}
-header {
-    position: sticky;
-    top: 0;
-}
-.header {
-    color: black;
-    background-color: rgb(235, 197, 74);
-}
-.soderjanie {
-    background-color: rgb(228, 205, 165);
-    color: black;
-}
-.karta {
-    background-color: rgb(228, 205, 165);
-    color: black;
-}
-.otzivi {
-    background-color: rgb(228, 205, 165);
-    color: black;
-}
-.characters {
-    background-color: rgb(228, 205, 165);
-    color: black;
-}
+
 .svecha {
     width: 40%;
 }
@@ -70,4 +51,8 @@ header {
 }
 .infa {
     background-color: rgb(228, 205, 165);
-}    
+}   
+.photoe_photoe {
+    border-radius: 10px;
+    width: 800px;
+} 
