@@ -1,0 +1,12 @@
+*{
+    background-color: chartreuse;
+}
+img {
+    width: 150px;
+    height: 150px;
+}
+button {
+    background-color: rgb(56, 32, 10);
+    color: darkgray;
+    border:2px darkblue;
+}
