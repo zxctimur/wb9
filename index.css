@@ -1,12 +1,19 @@
-*{
-    background-color: chartreuse;
-}
 img {
     width: 150px;
-    height: 150px;
+    height: 70px;
+    cursor: pointer;
 }
+
 button {
-    background-color: rgb(56, 32, 10);
-    color: darkgray;
-    border:2px darkblue;
+    background-color: sandybrown; 
+    color: darkgrey;
+    border: 1px solid sandybrown;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+ .game, .game-count {
+    display: none;
 }

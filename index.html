@@ -5,23 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="user-name">
-        <p>введи имя</p>
-    <input type="text" placeholder="введите имя">
-    <button>далее</button>
+        <p>Введи имя</p>
+        <input id="name" type="text" placeholder="Введи имя"><br>
+        <button id="to-count">Давай дальше</button>
     </div>
     <div class="game-count">
-        <p>сколько раз играем?</p>
-        <input type="text" placeholder="введите кол-во попыток">
+        <p>Сколько раз будем игать?</p>
+        <input id="count" value="1" type="number" placeholder="Количество попыток"><br>
+        <button id="to-game">Давай дальше</button>
     </div>
     <div class="game">
-        <img src="images.png" alt="">
-        <img src="images.jfif" alt="">
-        <img src="даун.jfif" alt="">
+        <div class="pics">
+            <img id="rock" src="./rock.png" alt="">
+            <img id="scissors" src="./scissors.jfif" alt="">
+            <img id="paper" src="./paper.jfif" alt="">
+        </div>
+        <div>
+            <div>
+                <span>Игр сыграно: </span><span id="game-all">0</span>
+            </div>
+            <div>
+                <span>Ваших побед: </span><span id="user-win">0</span>
+            </div>
+            <div>
+                <span>Побед компьютера: </span><span id="pc-win">0</span>
+            </div>
+        </div>
+        <div class="middle-result">
+            <span id="middle-result"></span>
+        </div>  
+        <div class="result">
+            <span id="result"></span>
+        </div> 
     </div>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
