@@ -1,6 +1,8 @@
 import {PATH, location} from './shared/locations' 
 import {links} from './shared/links'
+import { getUser } from './api/api-handlers'
 import './style.scss';
+import { user } from './components/main/main';
 
 window.onload = () => {
     const pathURL = window.location.pathname
@@ -13,6 +15,7 @@ window.onload = () => {
             break;
         case location.page2:
             links()
+
             break;
         case location.page3:
             links()
