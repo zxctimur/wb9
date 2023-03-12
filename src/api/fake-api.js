@@ -1,1 +1,0 @@
-const api = 'https://dummyjson.com/'
