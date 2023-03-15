@@ -1,0 +1,12 @@
+@import './colors.scss';
+@mixin wrapper {
+    width: 500px;
+    height: 1000px;
+    background-color: $green;
+    padding: 10px;
+}
+
+@mixin wh {
+    width: 400px;
+    height: 200px;
+}

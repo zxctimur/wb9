@@ -1,0 +1,27 @@
+@import './colors.scss';
+@import './mixins.scss';
+
+.wrapper {
+    @include wrapper;
+    .div1 {
+        @include wh;
+        background-color: $red;
+        p {
+            color: $white;
+        }
+        .div1p2 {
+            color: $black;
+        }
+    }
+    .div2 {
+        @include wh;
+        background-color: $blueviolet;
+        p {
+            color: $yellowgreen;
+        }
+    }
+    p {
+    color: $orange;
+}
+}
+

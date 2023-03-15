@@ -1,0 +1,21 @@
+.wrapper {
+  width: 500px;
+  height: 1000px;
+  background-color: green;
+  padding: 10px; }
+  .wrapper .div1 {
+    width: 400px;
+    height: 200px;
+    background-color: red; }
+    .wrapper .div1 p {
+      color: white; }
+    .wrapper .div1 .div1p2 {
+      color: black; }
+  .wrapper .div2 {
+    width: 400px;
+    height: 200px;
+    background-color: rgba(138, 43, 226, 0.4); }
+    .wrapper .div2 p {
+      color: yellowgreen; }
+  .wrapper p {
+    color: orange; }
