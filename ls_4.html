@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ls4</title>
+</head>
+<body>
+    <textarea style="width: 300px;height: 200px;" id="info" placeholder="pishi"></textarea>
+    <button id="but">Del</button>
+    <script>
+        window.onload = load;
+        let storage = window.localStorage;
+        info.value = storage.getItem('messsage');
+
+        info.oninput = () => {
+            storage.setItem('message', info.value);
+        }
+
+        function load (){
+            let but = document.getElementById('but');
+            let info = document.getElementById('info');
+
+            but.addEventListener('click', clear);
+
+        }
+        function clear(){
+            storage.removeItem('message');
+            info.value = ''
+        }
+    </script>
+</body>
+</html>

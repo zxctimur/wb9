@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage3</title>
+    <style>
+        body{
+            background: wheat;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        Имя:<input type="text" id="name"><br><br>
+        Фамилия:<input type="text" id="secondname"><br><br>
+        Почта:<input type="text" id="email"><br><br>
+        <input type="button" value="Собрать инф" id="button1">
+        <input type="button" value="Вспомнить инф" id="button2">
+        <p id="user"></p>
+    </form>
+    <script>
+        window.onload = load;
+        let st = window.localStorage
+
+        function load(){
+            let name = document.getElementById('name');
+            let secondname = document.getElementById('secondname');
+            let email = document.getElementById('email');
+            let button1 = document.getElementById('button1');
+            let button2 = document.getElementById('button2');
+            let user = document.getElementById('user');
+            
+            button1.addEventListener('click',submit);
+            button2.addEventListener('click',printInfo);
+        }
+        
+        function submit(){
+            let n1 = name.value;
+            let n2  = secondname.value;
+            let e = email.value;
+            st.setItem('name1',n1)
+            st.setItem('name2',n2)
+            st.setItem('email',e)
+        }
+
+        function printInfo(){
+            user.innerHTML = 'Информация о чурке ' +st.name + ' ' + st.secondname + ' ' + st.email;
+        }
+
+        function alertStorage(){
+            for(let i = 0; )
+        }
+    </script>
+</body>
+</html>

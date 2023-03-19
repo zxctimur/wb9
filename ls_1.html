@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage1</title>
+    <style>
+        body{
+            background: wheat;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let st = window.localStorage
+        console.log(st)
+        st.setItem('nick','Gerasenko')
+        let name =st.getItem('nick')
+        console.log(name)
+        st.setItem('city','Gomel')
+        let city =st.getItem('city')
+        st.city = 'London'
+        console.log(st.city)
+        let alert_time = new Date();
+        st.setItem('time', alert_time)
+        console.log(st.time)
+    </script>
+</body>
+</html>
