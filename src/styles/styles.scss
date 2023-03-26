@@ -1,6 +1,8 @@
 @import './colors.scss';
 @import './footer.scss';
 @import './header.scss';
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 
 
 body {
@@ -35,4 +37,9 @@ body {
 
 
     }
+}
+nav{
+    color: rgb(23, 23, 116);
+    font-family: 'Caveat', cursive;
+    font-size: 130%;
 }

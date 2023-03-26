@@ -41,11 +41,11 @@ module.exports = {
           },
           {
             test: /\.(png|jpg|jpeg|gif|svg)$/,
-            use: [ 'file-loader' ]
+            type: 'asset'
           }
         ]
       },
     devServer: {
-        port: 5000
+        port: 3000
     }
 }
