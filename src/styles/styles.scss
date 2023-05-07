@@ -17,6 +17,8 @@ body {
             
             nav {
                 padding: 10px;
+                border: 1px solid black;
+                margin: 5px;
                 
                 ul {
                     display: flex;
@@ -29,10 +31,22 @@ body {
             }
 
             section {
-                height: 97%;
-                overflow-y: auto;
                 padding: 10px;
+                .albums{
+                    border: 1px solid black;
+                    background-color: rgb(17, 147, 199);
+                }
+                .plastilin{
+                    border: 1px solid black;
+                    background-color: rgb(16, 106, 141);
+                }
+                .pesnidlyadevstvennicov_part2{
+                    border: 1px solid black;
+                    background-color: rgb(17, 147, 199);
+                }
+
             }
+
         }
 
 
