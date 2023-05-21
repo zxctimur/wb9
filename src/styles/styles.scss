@@ -17,7 +17,6 @@ body {
             
             nav {
                 padding: 10px;
-                border: 1px solid black;
                 margin: 5px;
                 
                 ul {
@@ -29,9 +28,29 @@ body {
                     }
                 }
             }
+            .inv{
+                
+                    text-indent: -9999px;                 /* sends the text off-screen */
+                    background-image: url(/src/assets/inv.png);  /* shows image */
+                    height: 100px;                        /* be sure to set height & width */
+                    width: 600px;
+                    white-space: nowrap;            /* because only the first line is indented */
+                
+            }
 
             section {
                 padding: 10px;
+                .bilet{
+                    display: grid;
+                    grid-template-columns: 200px 500px;
+                    background-color: antiquewhite;
+                    border: solid black 1px;
+                    width: 800px;
+                    border-radius: 10px;
+                    .biletimg{
+                        width: 80px;
+                    }
+                }
                 .albums{
                     border: 1px solid black;
                     background-color: rgb(17, 147, 199);
@@ -47,6 +66,34 @@ body {
                 .ivanmargovno{
                     background-color:rgb(248, 169, 117);
                     border: 1px solid black;
+                }
+                .ppg{
+                    background-color: rgb(42, 141, 255);
+                    width: 400px;
+                    border: 1px solid rgb(24, 24, 24);
+                    border-radius: 10px;
+                }
+                .intfacts{
+                    font-size: 120%;
+                }
+                .mem{
+                    display:grid;
+                    grid-template-columns: 200px 500px 500px 500px 500px;
+                    margin: 0px;
+                    padding: 0px;
+                    .golova {
+                        background-color: lightblue;
+                        border: 1px solid black;
+                        margin: 0px;
+                    }
+                    .vanyabio{
+                        border: 1px solid black;
+                    }
+                    .niz{
+                        border: 1px solid black;
+                        margin: 0px;
+                    }
+
                 }
 
             }

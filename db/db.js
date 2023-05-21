@@ -1,21 +1,17 @@
-const song = document.getElementById('song-or-album')
-const oblozcha = document.getElementById('oblozcha')
+const album = document.getElementById('album')
 const btn = document.getElementById('sendbutton')
 
 const db_url = 'https://zxc-1488-default-rtdb.firebaseio.com'
 
 btn.onclick = () => {
     const data = {
-        song: song.value,
-        oblozcha:oblozcha.value,
+        album: album.value,
 
     }
 
     console.log(data);
 
-    song.value = ''
-    oblozcha.value = ''
-
+    album.value = ''
 
     return fetch(`${db_url}/songs.json`,
     {
